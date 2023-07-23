@@ -147,7 +147,7 @@ const getCommentAndRatingEditor = () => {
         <label for="comment-edit">Comment: </label>
         <input type="text" id="comment-edit" value="${JSON.parse(localStorage.getItem("comments"))[imdbID]}">
         <button id="comment-btn">Comment</button><br/><br/>
-        <label for="ratings-edit">Ratings (out of 10): </label>
+        <label for="ratings-edit">Ratings (out of 5): </label>
         <input type="number" id="rating-edit" value="${JSON.parse(localStorage.getItem("ratings"))[imdbID]}">
         <button id="rate-btn">Rate</button>    
     `
@@ -166,8 +166,8 @@ const editAndSaveRating = (rating) => {
     if(rating < 0) {
         rating = 0
     }
-    if(rating > 10) {
-        rating = 10;
+    if(rating > 5) {
+        rating = 5;
     }
     const data = JSON.parse(localStorage.getItem("ratings"))
     data[imdbID] = rating
