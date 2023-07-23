@@ -1,0 +1,85 @@
+body {
+    padding: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+
+#movie-list {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#search-movies {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#search {
+    height: 30px;
+}
+
+#search-btn {
+    height: 20px;
+    margin: 0 10px;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+.movie-list-head {
+    background-color: rgb(60, 255, 255);
+}
+
+.movie-list-head th {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-list-poster {
+    padding: 30px;
+}
+
+.movie-list-poster img {
+    max-height: 400px;
+}
+
+#movie-info {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#movie-info td {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.movie-info-poster td{
+    text-align: center;
+}
+
+.movie-info-poster img {
+    max-height: 400px;
+}
+
+#go-back-btn {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.movie-list-nameElement:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
